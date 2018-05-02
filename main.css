@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+	background: #2C2E49;
+	height: 100vh;
+	padding: 20px;
+}
+
+header {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+main {
+		display: flex;
+		justify-content: space-around;
+		margin-top: 36vh;
+}
+
+main div {
+		flex-basis: 250px;
+		display: flex;
+		flex-direction: column;
+}
+
+
+main div h5, main div p {
+	font-family: 'Nunito', sans-serif;
+	text-align: center;
+	margin-top: 11px;
+	color: #F4EDF2;
+}
+
+main div p {
+	line-height: 2;
+	opacity: 0;
+}
+
+.nav-items1:hover p {
+	opacity: 1;
+	transition-duration: 1.3s;
+}
+
+.nav-items2:hover p {
+	opacity: 1;
+	transition-duration: 1.3s;
+}
+
+.nav-items3:hover p {
+	opacity: 1;
+	transition-duration: 1.3s;
+}
+
+.nav-items4:hover p {
+	opacity: 1;
+	transition-duration: 1.3s;
+}
+
+main div {
+	transition: appear 4s ease-in 0.5s;
+}
+
+.labels {
+	font-family: 'Nunito', sans-serif;
+	text-transform: capitalize;
+	font-size: 22px;
+}
+
+main a {
+  text-align: center;
+  margin: auto;
+}
+
+#signs, #lightning, #newspaper, #spanner {
+	color: #F4EDF2;
+	opacity: 0.7;
+	margin: auto;
+}
+
+#map {
+	margin-top: 15px;
+	color: #B89D6B;
+	opacity: 0.7;
+}
+
+@media (max-width: 640px) {
+	main {
+		flex-direction: column;
+		margin-top: 20px;
+	}
+	main div i {
+		height: 30px;
+	}
+}
+
+/*BLOG*/
+.blog-post {
+  height: 100px;
+  background-color: #F4EDF2;
+  margin: 15px;
+  flex-basis: 350px;
+  flex-grow: 1;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: 0.8;
+}
+
+.blog-row {
+  display: flex;
+}
+
+.blog-row:first-child {
+  margin-top: 20px;
+}
+
+@media (max-width: 640px) {
+	.blog-row {
+    flex-wrap: wrap;
+  }
+}
